@@ -1,0 +1,247 @@
+/* GENEL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* ÜST BAR */
+.top-bar {
+  background: #1f2937;
+  color: white;
+  padding: 20px;
+}
+
+.top-bar h1 {
+  margin: 0 0 10px;
+}
+
+/* FİLTRELER */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filters button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #e5e7eb;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.filters button:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* 🔥 GRID – 4x4 KATALOG */
+.grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 sütun */
+  gap: 20px;
+}
+
+/* KART */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🔥 TÜM RESİMLER AYNI BOY */
+.card img {
+  width: 100%;
+  height: 180px;          /* SABİT YÜKSEKLİK */
+  object-fit: contain;    /* taşma yok */
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+/* ÜRÜN ADI */
+.card h3 {
+  font-size: 14px;
+  margin: 10px 0 6px;
+  height: 36px;           /* başlık hizalama */
+  overflow: hidden;
+}
+
+/* KOD + PIN */
+.card span {
+  font-size: 12px;
+  color: #555;
+}
+
+/* 📱 RESPONSIVE (TABLET / MOBİL) */
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+ 
+}
+
+/* ===== ÜRÜN DETAY SAYFASI ===== */
+
+.detail-wrapper {
+  padding: 60px 20px;          /* 🔥 fotoğraf biraz aşağıdan başlar */
+  display: flex;
+  justify-content: center;
+}
+
+.detail-card {
+  max-width: 1000px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* foto + info yan yana */
+  gap: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* FOTO */
+.detail-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  background: #f3f4f6;
+  border-radius: 10px;
+}
+
+/* YAZI ALANI */
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* 🔥 foto hizasında ortalanır */
+}
+
+.detail-info h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.detail-info .code {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.detail-info .desc {
+  line-height: 1.6;
+  color: #444;
+}
+
+.detail-info .back {
+  margin-top: 30px;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* MOBİL */
+@media (max-width: 800px) {
+  .detail-card {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-image img {
+    height: 280px;
+  }
+}
+/* ARAMA */
+.search-box {
+  margin-top: 15px;
+}
+
+.search-box input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* HEADER LOGO + BAŞLIK */
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-row h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  flex: 1;
+}
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+}
+/* HEADER İÇ DÜZEN */
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Sağ taraf: logo + arama */
+.right-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+/* Arama input */
+.search-input {
+  width: 220px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  outline: none;
+}
+
+/* Filtreleri aşağı al */
+.filters {
+  margin-top: 25px;   /* 🔥 FİLTRELER AŞAĞI İNDİ */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ÜRÜN GRID ÜST BOŞLUK */
+.grid {
+  margin-top: 20px;   /* 🔥 ÜRÜNLERLE ÇAKIŞMA BİTER */
+}

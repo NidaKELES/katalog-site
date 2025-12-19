@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ürün Detayı</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="detail-wrapper">
+  <div class="detail-card" id="productDetail"></div>
+</div>
+
+<script src="data.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const id = Number(params.get("id"));
+
+  const product = products.find(p => p.id === id);
+  const container = document.getElementById("productDetail");
+
+  if (!product) {
+    container.innerHTML = "<p>Ürün bulunamadı</p>";
+  } else {
+    container.innerHTML = `
+      <div class="detail-image">
+        <img src="${product.image}" onerror="this.onerror=null;this.src='images/no-image.png';">
+      </div>
+
+      <div class="detail-info">
+        <h1>${product.name}</h1>
+        <p class="code">Kod: ${product.code}</p>
+        <p class="desc">${product.description}</p>
+        <a href="index.html" class="back">← Geri</a>
+      </div>
+    `;
+  }
+</script>
+
+</body>
+</html>

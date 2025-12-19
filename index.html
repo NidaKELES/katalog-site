@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ürün Kataloğu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="top-bar">
+
+  <!-- LOGO + BAŞLIK -->
+  <div class="header-row">
+    <img src="images/karadeniz.jpeg" class="logo left">
+
+    <h1>Otomotiv Soketleri</h1>
+
+    <div class="right-area">
+      <img src="images/karden.png" class="logo right">
+
+      <!-- ARAMA -->
+      <input 
+        type="text"
+        id="searchInput"
+        placeholder="Ürün adı veya kod ile ara..."
+        onkeyup="searchProducts()"
+        class="search-input"
+      >
+    </div>
+  </div>
+
+  <!-- FİLTRELER -->
+  <div class="filters">
+    <button onclick="filterByPin('all')">Tümü</button>
+    <button onclick="filterByPin(1)">1 Pin</button>
+    <button onclick="filterByPin(2)">2 Pin</button>
+    <button onclick="filterByPin(3)">3 Pin</button>
+    <button onclick="filterByPin(4)">4 Pin</button>
+    <button onclick="filterByPin(5)">5 Pin</button>
+    <button onclick="filterByPin(6)">6 Pin</button>
+    <button onclick="filterByPin(7)">7 Pin</button>
+    <button onclick="filterByPin(8)">8 Pin</button>
+    <button onclick="filterByPin(9)">9 Pin</button>
+    <button onclick="filterByPin(10)">10 Pin</button>
+    <button onclick="filterByPin(12)">12 Pin</button>
+    <button onclick="filterByPin(0)">DUY</button>
+  </div>
+
+</header>
+
+
+<main id="productList" class="grid"></main>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
