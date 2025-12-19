@@ -68,9 +68,11 @@ window.searchProducts = function () {
 };
 
 /* İlk yükleme */
-fetch("/api/products")
+document.addEventListener("DOMContentLoaded", () => {
+fetch("api/products")
   .then(res => res.json())
   .then(data => {
     products = data;
     renderProducts(products);
   });
+});
