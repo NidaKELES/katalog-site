@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ürün Detayı</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="detail-wrapper">
+  <!-- 🔥 ÇERÇEVEYİ VEREN CLASS BURADA ŞART -->
+  <div class="detail-card" id="productDetail">
+    <!-- JS burayı dolduracak -->
+  </div>
+</div>
+
 <script>
   const params = new URLSearchParams(window.location.search);
   const id = Number(params.get("id"));
@@ -15,8 +31,8 @@
 
       container.innerHTML = `
         <div class="detail-image">
-          <img src="${product.image}" 
-               onerror="this.onerror=null;this.src='images/no-image.png';">
+          <img src="${product.image}"
+               onerror="this.onerror=null;this.src='/images/no-image.png';">
         </div>
 
         <div class="detail-info">
@@ -28,3 +44,6 @@
       `;
     });
 </script>
+
+</body>
+</html>
