@@ -245,3 +245,69 @@ body {
 .grid {
   margin-top: 20px;   /* 🔥 ÜRÜNLERLE ÇAKIŞMA BİTER */
 }
+/* 📱 MOBİL ANA SAYFA DÜZENİ */
+@media (max-width: 768px) {
+
+  /* HEADER GENEL */
+  .top-bar {
+    padding: 15px;
+  }
+
+  /* LOGO + BAŞLIK + ARAMA DİKEY OLSUN */
+  .header-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* BAŞLIK */
+  .header-row h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  /* SAĞ ALAN (LOGO + ARAMA) */
+  .right-area {
+    align-items: center;
+    width: 100%;
+  }
+
+  /* ARAMA ORTADA VE GENİŞ */
+  .search-input {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* LOGOLAR BİRAZ KÜÇÜLSÜN */
+  .logo {
+    height: 40px;
+  }
+
+  /* FİLTRELER ORTALANSIN */
+  .filters {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  /* 🔥 MOBİL GRID: 2 ÜRÜN YAN YANA */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  /* KART İÇERİĞİ BÜYÜSÜN */
+  .card h3 {
+    font-size: 13px;
+    height: auto;
+  }
+
+  .card span {
+    font-size: 12px;
+  }
+
+  .card img {
+    height: 160px;
+  }
+}
