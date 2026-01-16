@@ -70,7 +70,7 @@ export default function handler(req, res) {
     pins: 1,
     category: "Soket",
     description: "Toyota araçlarla uyumlu yağ basınç sensörü.",
-    image: "/images/KRD1010.png"
+    image: "/images/KRD1010.PNG"
   },
    {
     id: 9,
@@ -1311,7 +1311,7 @@ export default function handler(req, res) {
     pins: 2,
     category: "Soket",
     description: "Üniversal Süper Seal 2 Pinli Dişi ",
-    image: "/images/KRD2098A.png"
+    image: "/images/KRD2098A.PNG"
   },{
     id: 159,
     name: "9005-9006 Ampul Soketi",
@@ -1319,7 +1319,7 @@ export default function handler(req, res) {
     pins: 2,
     category: "Soket",
     description: "9005-9006 Ampul Soketi ",
-    image: "/images/KRD1699.png"
+    image: "/images/KRD1699.PNG"
   },{
     id: 160,
     name: "Üniversal Çift Duylu 1016 ",
@@ -1327,7 +1327,7 @@ export default function handler(req, res) {
     pins: 0,
     category: "Soket",
     description: "Üniversal Çift Duylu 1016 ",
-    image: "/images/KRD0061.png"
+    image: "/images/KRD0061.PNG"
   },{
     id: 161,
     name: "Üniversal Japon Tekli Duylu ",
@@ -1335,7 +1335,7 @@ export default function handler(req, res) {
     pins: 0,
     category: "Soket",
     description: "Üniversal Japon Tekli Duylu ",
-    image: "/images/KRD0062.png"
+    image: "/images/KRD0062.PNG"
   },{
     id: 162,
     name: "Üniversal Çift Duy T20 ",
@@ -1343,7 +1343,7 @@ export default function handler(req, res) {
     pins: 0,
     category: "Soket",
     description: "Üniversal Çift Duy T20 ",
-    image: "/images/KRD0064.png"
+    image: "/images/KRD0064.PNG"
   },{
     id: 163,
     name: "Fiat E.M. Çift Duy 20 ",
@@ -1351,7 +1351,7 @@ export default function handler(req, res) {
     pins: 0,
     category: "Soket",
     description: "Fiat E.M. Çift Duy 20 ",
-    image: "/images/KRD0064G.png"
+    image: "/images/KRD0064G.PNG"
   },
   ]);
 }
