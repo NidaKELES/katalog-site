@@ -566,7 +566,7 @@ export default function handler(req, res) {
     pins: 2,
     category: "Soket",
     description: "Toyota Hararet Müşürü ",
-    image: "/images/KRD2045.png"
+    image: "/images/KRD2045.PNG"
   },{
     id: 66,
     name: "EGR Vakum Solenoid Vana Soketi ",
@@ -694,7 +694,7 @@ export default function handler(req, res) {
     pins: 2,
     category: "Soket",
     description: "Gündüz Farı, Sis Farı İş Makinası Soketi ",
-    image: "/images/KRD2084.png"
+    image: "/images/KRD2084.PNG"
   },{
     id: 82,
     name: "Gündüz Far Soketi ",
@@ -766,7 +766,7 @@ export default function handler(req, res) {
     pins: 3,
     category: "Soket",
     description: "Chevrolet, Cadillac ve Ford marka araçlarla uyumlu Bosch Dizel Enjektör, Map Sensör Soketi ",
-    image: "/images/KRD3008A.png"
+    image: "/images/KRD3008A.PNG"
   },{
     id: 91,
     name: "Hararet Müşürü, Hız Sensör Soketi ",
@@ -1079,7 +1079,7 @@ export default function handler(req, res) {
     pins: 5,
     category: "Soket",
     description: "Fiat, VW ve Skoda araçlarla uyumlu Stop Lambası Soketi ve Fiat, VAG, Seat, Skoda, VW araçlarla uyumlu MAF Sensörü / Hava Akış Sensörü Soketi. ",
-    image: "/images/KRD5010.png"
+    image: "/images/KRD5010.PNG"
   },{
     id: 130,
     name: "Soket Bosch Tipi Konjektör, Alternatör Tamir Soketi ",
@@ -1111,7 +1111,7 @@ export default function handler(req, res) {
     pins: 5,
     category: "Soket",
     description: "Abarth, Chrysler, Citroën, Fiat, Iveco, Lancia ve Peugeot araçlarla uyumlu kalorifer rezistans soketi. ",
-    image: "/images/KRD5017.png"
+    image: "/images/KRD5017.PNG"
   },{
     id: 134,
     name: "Akışmetre,Cam Kriko, Hava Yoğunluk ve Far / Stop Soketi  ",
@@ -1191,7 +1191,7 @@ export default function handler(req, res) {
     pins: 6,
     category: "Soket",
     description: "ISUZU Stop / Müşür ve SCANİA   Far Soketi ",
-    image: "/images/KRD6020.png"
+    image: "/images/KRD6020.PNG"
   },{
     id: 144,
     name: "Gaz Kelebeği Konum Sensörü ve Stop Lambası Soketi ",
@@ -1239,7 +1239,7 @@ export default function handler(req, res) {
     pins: 7,
     category: "Soket",
     description: "Mercedes-Benz, Renault Trucks, Scania, Volvo, MAN, Citroën, Fiat, Iveco, Peugeot, Volkswagen, Claas ve DAF araçlarla uyumlu arka lamba bağlantı soketi. ",
-    image: "/images/KRD7006.png"
+    image: "/images/KRD7006.PNG"
   },{
     id: 150,
     name: "Ağır Vasıta Stop Soketi ",
@@ -1263,7 +1263,7 @@ export default function handler(req, res) {
     pins: 8,
     category: "Soket",
     description: "Oto Elektrik Tesisat Soketi [ERKEK] ",
-    image: "/images/KRD8030.png"
+    image: "/images/KRD8030.PNG"
   },{
     id: 153,
     name: "Direksiyon Pompa ve Far Soketi ",
@@ -1303,7 +1303,7 @@ export default function handler(req, res) {
     pins: 2,
     category: "Soket",
     description: "Üniversal Süper Seal 2 Pinli Dişi ",
-    image: "/images/KRD2006E.png"
+    image: "/images/KRD2006E.PNG"
   },{
     id: 158,
     name: "Üniversal Süper Seal 2 Pinli Dişi ",
