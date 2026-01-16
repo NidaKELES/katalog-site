@@ -297,7 +297,7 @@ export default function handler(req, res) {
     pins: 2,
     category: "Soket",
     description: "Buick, Cadillac, Chevrolet, Dacia, Daewoo, General Motors, Hyundai, Kia, Infiniti, Lada, Nissan, Opel, Pontiac, Renault ve Renault Trucks araçlarla uyumlu ateşleme bobini soketi. ",
-    image: "/images/KRD2013.png"
+    image: "/images/KRD2013C.png"
   },
   {
     id: 34,
@@ -333,7 +333,7 @@ export default function handler(req, res) {
     pins: 2,
     category: "Soket",
     description: "Ford, Land Rover, Volvo araçlarıyla uyumlu geri vites müşür soketi. ",
-    image: "/images/KRD2018A.png"
+    image: "/images/KRD2018A.PNG"
   },
   {
     id: 38,
@@ -542,7 +542,7 @@ export default function handler(req, res) {
     pins: 2,
     category: "Soket",
     description: "Ford Müşür Soketi ",
-    image: "/images/KRD2038A.png"
+    image: "/images/KRD2038A.PNG"
   },{
     id: 63,
     name: "Enjektör, Park Sensör, Kalem Bobin, Yakıt Pompası Soketi ",
